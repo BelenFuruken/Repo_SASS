@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.tipografia{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(240, 248, 255, 0.966);
+}
+.linea{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.966);
+}
+ul li{
+    list-style-type: none;
+    padding: 7px;
+}
+nav{
+    background-color: rgb(44, 44, 44);
+    color: rgba(240, 248, 255, 0.966);
+}
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 7px;
+   /* height: 40px;*/
+}
+header nav ul{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+.letra{
+    text-decoration: underline;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;
+}
+h2{
+    color: black;
+    margin: 50px;
+
+}

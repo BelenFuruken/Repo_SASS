@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.tipografia{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(240, 248, 255, 0.966);
+}
+.linea{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.966);
+}
+ul li{
+    list-style-type: none;
+    padding: 7px;
+}
+nav{
+    background-color: rgb(44, 44, 44);
+    color: rgba(240, 248, 255, 0.966);
+}
+footer{
+    grid-area: "footer";
+    justify-items: stretch;
+    height: 40px;
+}
+/*header nav ul{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}*/
+.letra{
+    text-decoration: underline;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;
+}
+#contacto{
+    color: black;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    /*position: relative;*/
+}
+h6{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+input{
+    width: 500px;
+    height: 15px;
+}
+#mensaje{
+    width: 700px;
+    height: 180px;
+}
+button{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}

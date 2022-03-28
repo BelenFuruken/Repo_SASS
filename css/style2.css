@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fondo{ /*Foto de fondo y fuente para toda la pagina*/
+    background-image: url(../image/FONDO\ FINAL.jpg);
+    background-size: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(240, 248, 255, 0.966);
+}
+a{ /*sacarle el subrayado y el color a los links*/
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(240, 248, 255, 0.966);
+}
+ul li{ /*sacarle viñetas a las listas*/
+    list-style-type: none;
+}
+.linea{ /*convierte en linea a los de tipo bloque*/
+    display: inline-block;
+}
+.logo{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*EMPEZANDO A USAR FLEXBOX*/
+nav{
+display: grid;
+grid-template-columns: repeat(1fr 1fr 1fr);
+grid-template-areas: 
+"div div ul";
+align-items: center;
+}
+nav ul{
+    margin-right: 10px;
+    grid-area: ul;
+}
+nav div{
+    grid-area: div;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    }
+    
+@media (max-width: 480px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr 1fr);
+        grid-template-areas: 
+        "div div div"
+        "ul ul ul";
+        align-items: center;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+#descripcion{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#pie{
+    display: flex;
+    justify-content: center;
+}
+/*
+header nav ul{ 
+    position:absolute;
+    top: 23px;
+    right:15px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 5px;
+    // border: 0.5px solid rgba(240, 248, 255, 0.966);
+}
+#descripcion div{ // tamaño del div que contiene toda la descripcion
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
+*/
+
+#nombre{ 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+   /* position: absolute; */
+    bottom:0px;    
+}
+#descripcion h4{
+    text-align: center;
+    padding: 20px;
+    line-height: 50px;
+    letter-spacing: 10px;
+}
+
+.letra{
+    text-decoration: underline;
+}
+

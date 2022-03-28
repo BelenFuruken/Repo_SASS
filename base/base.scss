@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{ /*sacarle el subrayado y el color a los links*/
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(240, 248, 255, 0.966);
+}
+ul li{ /*sacarle viñetas a las listas*/
+    list-style-type: none;
+}

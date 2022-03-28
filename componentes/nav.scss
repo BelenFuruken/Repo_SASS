@@ -1,0 +1,23 @@
+nav{
+
+    div{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        grid-area: div;
+        a{
+            display: inline-block;
+        }
+    }
+    ul{
+        margin-right: 10px;
+        grid-area: ul;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-areas: "div div ul";
+    align-items: center;
+}

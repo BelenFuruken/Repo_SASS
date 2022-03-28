@@ -1,0 +1,12 @@
+@import"../base/base.scss";
+@import"../componentes/footer.scss";
+@import"../componentes/nav.scss";
+@import"../componentes/index.scss";
+@import"../componentes/about.scss";
+
+body{
+    background-image: url(../image/FONDO\ FINAL.jpg);
+    background-size: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(240, 248, 255, 0.966);
+}
