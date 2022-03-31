@@ -1,0 +1,147 @@
+@import "../base/base.scss";
+
+@mixin cuadrado ($direction, $wrap, $align, $justi){
+    display: flex;
+    flex-direction:$direction;
+    flex-wrap: $wrap;
+    align-content: $align;
+    justify-content: $justi;
+}
+.bloque_img{
+    height: 330px;
+    align-content: center;
+    justify-content: center;
+}
+%bloques{
+    background-color: brown;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+%div_footer{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+}
+$util: (
+    d-flex: flex, 
+    d-grid: grid,
+    c-negro: black,
+);
+.a1{
+    grid-area: a1;
+}
+.a2{
+    grid-area: a2;
+}
+.a3{
+    grid-area: a3;
+}
+
+header{
+    nav{
+        background-color: rgb(44, 44, 44);
+        color: rgba(240, 248, 255, 0.966);
+        width: 100%;
+        height: 80px;
+        span{
+            grid-area: logo;
+            display: map-get($util, d-flex);
+            align-items: center;
+            align-content: center;
+            justify-content:start;
+            padding-left: 10px;
+        }
+        div{
+            grid-area: pag;
+            display: map-get($util, d-flex);
+            flex-direction: row;
+            justify-self: center;
+            width: auto;
+            display: inline-block;
+            h3{
+                display: inline-block;
+            }
+        }
+        ul{
+            display: inline-block;
+            grid-area: naav;
+            display: map-get($util, d-flex);
+            flex-direction: row;
+            justify-content:end;
+            padding: 7px;
+        }
+        display: map-get($util, d-grid);
+        grid-template-columns: repeat(1fr 1fr 1fr);
+        grid-template-areas:
+        "logo pag naav";
+        align-items: center;
+    }
+}
+main{
+    margin-top: 15px;
+    span{
+        grid-area: arq;
+        @include cuadrado(column,wrap, center, center);
+        h3{
+            display: map-get($util, c-negro);
+            font-size: 25px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            display: map-get($util, c-negro);
+            text-align: center;
+            margin: 7px 2px 7px 2px ;
+        }
+        div{
+            @include cuadrado(row,wrap, center, center);  
+            div{
+                @extend%bloques;
+            }
+            div{
+                @extend%bloques;
+
+            }
+            div{
+                @extend%bloques;
+            }
+        }
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;
+        margin: 70px;
+        display: map-get($util, d-flex);
+        flex-direction: row;
+        justify-content:space-around;
+        div{
+            @extend%div_footer;
+        }
+        div{
+            @extend%div_footer;
+
+        }
+        div{
+            @extend%div_footer;
+
+        }
+        div{
+            @extend%div_footer;
+
+        }
+    }
+    display: map-get($util, d-grid);
+    grid-template-columns: repeat(1fr 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    "a1 arq"
+    "fotograf a2"
+    "a3 diseño"
+    "footer footer";
+    justify-items: center;
+    align-items: center;
+    width: auto;
+}

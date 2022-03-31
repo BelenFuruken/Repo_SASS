@@ -59,13 +59,145 @@ span div h1 {
   width: 100%;
   bottom: 0px;
 }
-span h4 {
+span h2 {
   text-align: center;
   padding: 20px;
   line-height: 50px;
   letter-spacing: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /*sacarle el subrayado y el color a los links*/
+  text-decoration: none;
+  padding: 10px;
+  color: rgba(240, 248, 255, 0.966);
+}
+
+ul li {
+  /*sacarle viñetas a las listas*/
+  list-style-type: none;
+}
+
+.bloque_img {
+  height: 330px;
+  align-content: center;
+  justify-content: center;
+}
+
+main span div div {
+  background-color: brown;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+main footer div {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+}
+
+.a1 {
+  grid-area: a1;
+}
+
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+header nav {
+  background-color: #2c2c2c;
+  color: rgba(240, 248, 255, 0.966);
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  grid-template-areas: "logo pag naav";
+  align-items: center;
+}
+header nav span {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+header nav div {
+  grid-area: pag;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  width: auto;
+  display: inline-block;
+}
+header nav div h3 {
+  display: inline-block;
+}
+header nav ul {
+  display: inline-block;
+  grid-area: naav;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 7px;
+}
+
+main {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-areas: "a1 arq" "fotograf a2" "a3 diseño" "footer footer";
+  justify-items: center;
+  align-items: center;
+  width: auto;
+}
+main span {
+  grid-area: arq;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+main span h3 {
+  display: black;
+  font-size: 25px;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+main span p {
+  display: black;
+  text-align: center;
+  margin: 7px 2px 7px 2px;
+}
+main span div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+main footer {
+  grid-area: footer;
+  width: 100%;
+  margin: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 body {
   background-image: url(../image/FONDO\ FINAL.jpg);
   background-size: 100%;

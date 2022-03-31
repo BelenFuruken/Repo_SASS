@@ -1,7 +1,7 @@
 nav{
-
     div{
         display: inline-block;
+        justify-content:start;
         margin: 10px;
         padding: 10px;
         grid-area: div;
@@ -17,7 +17,7 @@ nav{
         justify-content: end;
     }
     display: grid;
-    grid-template-columns: repeat(1fr 1fr 1fr);
-    grid-template-areas: "div div ul";
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-areas: "div ul";
     align-items: center;
 }
